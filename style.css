@@ -67,6 +67,7 @@ body {
 .slider-list {
   margin: 0;
   padding: 0;
+  margin-top: -20px;
   list-style: none;
 }
 
@@ -138,6 +139,11 @@ body {
   cursor: pointer;
 }
 
+.slider-item {
+  margin-bottom: 40px;
+}
+
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url(img/slide-1.png);
@@ -185,9 +191,9 @@ input[type="radio"].visually-hidden {
 }
 
 .logo-container {
-  margin-left: 27px;
-  margin-top: 9px;
-  margin-right: 23px;
+  /* margin-left: 27px; */
+  /* margin-top: 9px; */
+  margin-right: 9px;
 }
 
 .main-header {
@@ -199,12 +205,21 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 23px;
+  margin-top: 13px;
 
   list-style: none;
 }
 
 .site-navigation-item {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0;
+  margin-bottom: 20px;
+
+  white-space: nowrap;
+}
+
+.site-navigation-item .user-btn {
   position: relative;
 
   display: block;
@@ -219,17 +234,17 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-.site-navigation-item::after {
+/* .site-navigation-item::after {
   content: "";
 
   display: block;
   width: 100%;
   height: 1px;
 
-  background-color: rgb(176, 199, 186, 0.2);
-}
+  background-color: rgb(0, 0, 0, 0.2);
+} */
 
-.site-navigation-item:hover  {
+.site-navigation-item .user-btn:hover  {
   background-color: #f7f6f3;
   color: #323232;
 }
@@ -249,23 +264,27 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: end;
   margin: 0;
-  padding: 0;
-  margin-left: 310px;
-  margin-top: 13px;;
+  padding:0;
+  margin-top: 6px;
+  margin-left: 325px;
   list-style: none;
 
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .user-navigation li {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 12px;
+  padding-left: 19px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
+
 .main-navigation {
+  padding-top: 9px;
+  padding-left: 27px;
+  padding-right:27px;
   display: flex;
 }
 
@@ -278,8 +297,8 @@ input[type="radio"].visually-hidden {
   display: none;
   position:absolute;
   top: 38px;
-  left: -22px;
-  min-width: 143px;
+  left: -8px;
+  width: 150px;
   margin: 0;
   padding: 0;
   margin-top: 5px;
@@ -294,11 +313,13 @@ input[type="radio"].visually-hidden {
 }
 
 .submenu li {
+  position: relative;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 20px;
   padding-right:20px;
   text-align: start;
+  white-space: nowrap;
 
 }
 
@@ -307,25 +328,41 @@ input[type="radio"].visually-hidden {
   color: #3f3f3f;
   width: 100%;
   text-decoration: none;
-  /* background-color: #fbded8; */
 }
 
 .submenu li:hover {
   background-color: #fbded8;
 }
 
+.submenu li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.submenu li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.new-item a {
+  font-weight: bold;
+}
+
 .new-item::after{
+  position: absolute;
+  top: 33px;
+  left: 10px;
   content: "";
   display: block;
-  width: 128px;
+  width: 136px;
   height: 1px;
-  background-color: rgb(176, 199, 186, 0.2);
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.2);
 }
 
 .user-button {
   font: inherit;
-  /* background-color: rgb(160, 180, 169, 0.2); */
-  background-color: #9db1a5;
+  background-color: rgb(253, 255, 254, 0.2);
   border: none;
   color: #ffffff
 }
@@ -362,7 +399,7 @@ input[type="radio"].visually-hidden {
 .input-button::before {
   position: absolute;
   content: "";
-  left: 15px;
+  left: 14px;
   top: 4px;
 
   width: 24px;
@@ -378,7 +415,8 @@ input[type="radio"].visually-hidden {
 .basket-button::before {
   content: "";
   position: absolute;
-  left: 16px;
+  top: 6px;
+  left: 15px;
 
   width: 21px;
   height: 20px;
@@ -431,9 +469,13 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form input {
+  font: inherit;
   width: 240px;
   height: 40px;
   margin-top: 5px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
 }
@@ -479,10 +521,15 @@ input[type="radio"].visually-hidden {
   width: 23px;
   height: 20px;
   display: block;
+  position: absolute;
+
+  left: 8px;
+  top: 7px;
 
   background-image: url(img/magnifier.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
+
 }
 
 
@@ -493,6 +540,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input {
+  font: inherit;
+
   width: 310px;
   height: 45px;
 
@@ -526,9 +575,12 @@ input[type="radio"].visually-hidden {
 }
 
 .search-item:hover .search-button::before {
+  position: absolute;
+  left: 8px;
+  top: 8px;
   background-image: url(img/magnifer-black.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .working-hours-container {
@@ -553,4 +605,12 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: bold;
   margin: 0;
+}
+.index-columns {
+  display: flex;
+}
+.columns {
+  width: 560px;
+  height: 230px;
+  background-color: red;
 }
