@@ -17,8 +17,8 @@
   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
   <div class="site-wrapper">
-    <div class="container">
-      <header class="main-header">
+    <header class="main-header">
+      <div class="container">
         <nav class="main-navigation">
           <div class="logo-container">
             <img src="img/logo.svg" height="64" width="153" alt="Gllacy Shop">
@@ -45,31 +45,32 @@
               </ul>
             </li>
             <li class="payment-item site-navigation-item">
-              <a  class="user-btn" href="#">Доставка и оплата</a>
+              <a class="user-btn" href="#">Доставка и оплата</a>
             </li>
             <li class="info-item site-navigation-item">
               <a class="user-btn" href="#">О Компании</a>
             </li>
           </ul>
           <ul class="user-navigation">
-            <li class="search-item">
-              <button class="search-button user-button"><span class="visually-hidden">Поиск</span></button>
+            <li class="search-item user-navigation-item">
+              <button class="search-button user-navigation-button"><span class="visually-hidden">Поиск</span></button>
+              <div class="search-container">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <div class="search-container"><input type="search" name="search" placeholder="Что ищем?" id="search">
+                <input type="search" name="search" placeholder="Что ищем?" id="search">
                 </div>
                 <label class="visually-hidden" for="search">Поиск</label>
               </form>
             </li>
-            <li class="login-form-item">
-              <button class="input-button user-button">Вход</button>
+            <li class="login-form-item user-navigation-item">
+              <button class="input-button user-navigation-button">Вход</button>
               <div class="login-form">
                 <form action="https://echo.htmlacademy.ru" method="POST">
                   <p>
                     <input type="email" name="mail" placeholder="Электронная почта" id="mail">
                     <label class="visually-hidden" for="mail">Электронная почта</label>
                   </p>
-                  <p>
-                    <input type="password" name="password" placeholder="Пароль" id="password">
+                  <p >
+                    <input class="password-input" type="password" name="password" placeholder="Пароль" id="password">
                     <label class="visually-hidden" for="password">Пароль</label>
                   </p>
                   <div class="login-form-nav">
@@ -82,8 +83,8 @@
                 </form>
               </div>
             </li>
-            <li>
-              <a class="user-button basket-button" href="#">Пусто</a>
+            <li class="user-navigation-item">
+              <a class="user-navigation-button basket-button" href="#">Пусто</a>
             </li>
           </ul>
         </nav>
@@ -91,8 +92,9 @@
           <p class="hours">C 10 до 20, ежедневно</p>
           <p class="number">8 812 450-25-25</p>
         </div>
-      </header>
-
+      </div>
+    </header>
+    <div class="container">
       <section class="slider">
         <div class="sliders-controls">
           <label for="product-1">Первый</label>
@@ -121,22 +123,22 @@
         </ul>
         <div class="index-columns">
           <h2 class="visually-hidden">Акции</h2>
-          <section class="columns">
+          <section class="columns jam-columns">
             <h3>Малинка даром!</h3>
-            <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a class="button" href="#">Хочу варенье!</a>
+            <a class="button jam-button" href="#">Хочу варенье!</a>
           </section>
-          <section class="columns">
+          <section class="columns choco-columns">
             <h3>Шоколадки даром!</h3>
-            <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
               бесплатно.
             </p>
-            <a class="button" href="#">Хочу шоколадки!</a>
+            <a class="button choco-button" href="#">Хочу шоколадки!</a>
           </section>
         </div>
-        <section class="popular-goods">
-          <h2 class="visually-hidden">Популярные товары</h2>
+        <section class="popular-goods" style="height: 361px;">
+          <!-- <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="popular-goods-list">
             <li class="popular-goods-item">
               <a href="#">
@@ -185,32 +187,38 @@
               </a>
               <b>415 ₽/кг</b>
             </li>
-          </ul>
+          </ul> -->
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p>
-            Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+          <p class="heading-advantages">
+            Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+            <br>производства на развес
           </p>
           <ul class="advantages-list">
             <li>
+              <div class="advantages-icon-1 advantages-icon-container"></div>
               <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
                 оборудования и проверенных временем технологий.</p>
             </li>
             <li>
+              <div class="advantages-icon-2 advantages-icon-container"></div>
               <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
                 дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
             </li>
             <li>
+              <div class="advantages-icon-3 advantages-icon-container"></div>
               <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
                 связывает долговременное сотрудничество.</p>
             </li>
             <li>
+              <div class="advantages-icon-4 advantages-icon-container"></div>
               <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
                 мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
         </section>
+
         <div class="index-columns">
           <section class="blog columns">
             <h3>Новое в нашем блоге</h3>
