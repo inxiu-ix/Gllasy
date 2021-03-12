@@ -93,6 +93,7 @@ input[type="radio"].visually-hidden {
   border: none;
 
   cursor: pointer;
+  z-index: 7;
 }
 
 .button:hover {
@@ -523,6 +524,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search-container {
+
+  min-width: 341px;
   display: none;
   position: absolute;
   padding: 20px 15px;
@@ -577,8 +580,8 @@ input[type="radio"].visually-hidden {
 }
 .index-columns {
   display: flex;
-  margin-bottom: 39px;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .columns {
   display: flex;
@@ -589,8 +592,6 @@ input[type="radio"].visually-hidden {
   padding-right: 20px;
   padding-bottom: 25px;
   flex-grow: 1;
-
-  height: 229px;
 
   border-radius: 15px;
 }
@@ -634,19 +635,14 @@ input[type="radio"].visually-hidden {
 }
 
 .jam-columns {
-  background-color: #bb4564;
+
   background-image: url(img/jam.jpg);
   background-repeat: no-repeat;
 }
 
 .choco-columns {
-  background-color: #7e5c4b;
   background-image: url(img/choco.jpg);
   background-repeat: no-repeat;
-}
-
-.jam-button {
-  /* margin-left: auto; */
 }
 
 .choco-button {
@@ -656,6 +652,7 @@ input[type="radio"].visually-hidden {
 
 .advantages {
   padding: 26px 19px;
+  margin-top: 37px;
 
   border-radius: 15px;
   background-image: url(img/waffle-bg.jpg);
@@ -725,3 +722,199 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+.popular-goods {
+  margin-top: 38px;
+}
+
+.popular-goods-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.popular-goods-img {
+  border-radius: 50%;
+}
+
+.popular-goods-item {
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  margin-right: 26px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.popular-goods-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  transition: color 0.5s;
+  margin-top: 9px;
+}
+
+.popular-goods-item h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.popular-goods-item:last-child {
+  margin-right: 0;
+}
+
+.popular-goods-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 61px;
+  height: 61px;
+  background-image: url(img/hit.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.price {
+  position: absolute;
+  right: 118px;
+  top: 211px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+
+.kg {
+  font-size: 29px;
+}
+
+.popular-goods-button {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 15px;
+}
+
+.popular-goods-btn-container {
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.popular-goods-item:hover {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+
+.popular-goods-item:hover .popular-goods-btn-container {
+  visibility: visible;
+  background-color: rgba(248, 247, 244, 0.4);
+  opacity: 1;
+}
+
+.popular-goods-item:hover .price {
+  right: 105px;
+}
+
+.popular-goods-item:hover::before {
+  top: 5px;
+  left: 5px;
+}
+
+.description:hover {
+  color:#e84d37;
+}
+
+.blog {
+  display: inline-block;
+  color:#323232;
+  padding: 21px 18px;
+  background-image: url(img/strawberry-bg.jpg);
+  background-repeat: no-repeat;
+  min-height: 220px;
+}
+
+.blog h3 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog p {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.blog a {
+  padding: 0;
+  margin: 0;
+  font:inherit;
+  font-size: 24px;
+  line-height: 30px;
+  color:#323232;
+  text-align: start;
+}
+
+.mailing {
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  background-image: url(img/mail-bg.jpg);
+  min-height: 220px;
+  padding: 5px;
+}
+
+.mailing p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.mailing-container {
+  padding: 27px 20px;
+  background-color: #f8f7f4; 
+}
+
+.mailing-form {
+  display: flex;
+  white-space: nowrap;
+}
+
+.mailing-form p {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  margin-top: 38px;
+}
+
+.form-button {
+  margin-top: 36px;
+}
+
+.form-button button {
+  font: inherit;
+  padding: 10px 18px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.mailing-form input {
+  min-width: 368px;
+  padding: 9px 15px;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  border-radius: 5px;
+  border: 1px solid #999999;
+}
+
+/* СДЕЛАТЬ КОММИТ */

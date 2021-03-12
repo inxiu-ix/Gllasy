@@ -55,10 +55,10 @@
             <li class="search-item user-navigation-item">
               <button class="search-button user-navigation-button"><span class="visually-hidden">Поиск</span></button>
               <div class="search-container">
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <input type="search" name="search" placeholder="Что ищем?" id="search">
-                </div>
-                <label class="visually-hidden" for="search">Поиск</label>
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <input type="search" name="search" placeholder="Что ищем?" id="search">
+              </div>
+              <label class="visually-hidden" for="search">Поиск</label>
               </form>
             </li>
             <li class="login-form-item user-navigation-item">
@@ -69,7 +69,7 @@
                     <input type="email" name="mail" placeholder="Электронная почта" id="mail">
                     <label class="visually-hidden" for="mail">Электронная почта</label>
                   </p>
-                  <p >
+                  <p>
                     <input class="password-input" type="password" name="password" placeholder="Пароль" id="password">
                     <label class="visually-hidden" for="password">Пароль</label>
                   </p>
@@ -137,57 +137,46 @@
             <a class="button choco-button" href="#">Хочу шоколадки!</a>
           </section>
         </div>
-        <section class="popular-goods" style="height: 361px;">
-          <!-- <h2 class="visually-hidden">Популярные товары</h2>
+        <section class="popular-goods">
+          <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="popular-goods-list">
             <li class="popular-goods-item">
-              <a href="#">
-                <h3>
-                  <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                </h3>
-                <p>
-                  <img src="img/popular-1.jpg" height="270" width="267"
-                    alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                </p>
-              </a>
-              <b>310 ₽/кг</b>
+              <img class="popular-goods-img" src="img/popular-1.jpg" height="267" width="267"
+                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <b class="price">310₽<span class="kg">/кг</span></b>
+              <a href="#" class="description"> Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
+              <div class="popular-goods-btn-container">
+                <a class="button popular-goods-button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="popular-goods-item">
-              <a href="#">
-                <h3>
-                  <span>Сливочно-кофейное с кусочками шоколада</span>
-                </h3>
-                <p>
-                  <img src="img/popular-1.jpg" height="270" width="267" alt="Сливочно-кофейное с кусочками шоколада">
-                </p>
-              </a>
-              <b>380 ₽/кг</b>
+              <img class="popular-goods-img" src="img/popular-2.jpg" height="267" width="267"
+                alt="Сливочно-кофейное с кусочками шоколада">
+              <b class="price">380₽<span class="kg">/кг</span></b>
+              <a href="#" class="description">Сливочно-кофейное с кусочками шоколада</a>
+              <div class="popular-goods-btn-container">
+                <a href="#" class="button popular-goods-button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="popular-goods-item">
-              <a href="#">
-                <h3>
-                  <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-                </h3>
-                <p>
-                  <img src="img/popular-1.jpg" height="270" width="267"
-                    alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                </p>
-              </a>
-              <b>355 ₽/кг</b>
+              <img class="popular-goods-img" src="img/popular-3.jpg" height="267" width="267"
+                alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <b class="price">355₽<span class="kg">/кг</span></b>
+              <a href="#" class="description">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <div class="popular-goods-btn-container">
+                <a class="button popular-goods-button">Быстрый просмотр</a>
+              </div>
             </li>
             <li class="popular-goods-item">
-              <a href="#">
-                <h3>
-                  <span>Сливочное крем-брюле с карамельной подливкой</span>
-                </h3>
-                <p>
-                  <img src="img/popular-1.jpg" height="270" width="267"
-                    alt="Сливочное крем-брюле с карамельной подливкой">
-                </p>
-              </a>
-              <b>415 ₽/кг</b>
+              <img class="popular-goods-img" src="img/popular-4.jpg" height="267" width="267"
+                alt="Сливочное крем-брюле с карамельной подливкой">
+              <b class="price">415₽<span class="kg">/кг</span></b>
+              <a href="#" class="description">Сливочное крем-брюле с карамельной подливкой</a>
+              <div class="popular-goods-btn-container">
+                <a class="button popular-goods-button">Быстрый просмотр</a>
+              </div>
             </li>
-          </ul> -->
+          </ul>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -222,18 +211,24 @@
         <div class="index-columns">
           <section class="blog columns">
             <h3>Новое в нашем блоге</h3>
-            <a href="#">10 способов сервировки
-              <br>фруктовых щербетов к
-              <br>столу</a>
+            <p><a href="#">10 способов сервировки
+                <br>фруктовых щербетов к
+                <br>столу</a>
+            </p>
           </section>
           <section class="mailing columns">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-            <form class="mailing-form" action="https://echo.htmlacademy.ru" method="POST">
-              <input type="email" name="mailing" id="mailing" placeholder="Электронная почта">
-              <label class="visually-hidden" for="mailing">Рассылка</label>
-              <button class="button" type="submit">Отправить</button>
-            </form>
+            <div class="mailing-container">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+                происходит.
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+              <form class="mailing-form" action="https://echo.htmlacademy.ru" method="POST">
+                <p>
+                  <input type="email" name="mailing" id="mailing" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="mailing">Рассылка</label>
+                </p>
+                <div class="form-button"><button class="button" type="submit">Отправить</button></div>
+              </form>
+            </div>
           </section>
         </div>
         <section class="feedback">
