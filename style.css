@@ -863,6 +863,9 @@ input[type="radio"].visually-hidden {
   color:#323232;
   text-align: start;
 }
+.blog a:hover {
+  color:#e84d37;
+}
 
 .mailing {
   color: #5a5a5a;
@@ -997,6 +1000,10 @@ input[type="radio"].visually-hidden {
   margin-top: 36px;
 }
 
+.social-button:hover {
+  background-color:rgb(255, 255, 255, 0.5);
+}
+
 .twitter-button {
   background-image: url(img/twitter.svg);
   background-repeat: no-repeat;
@@ -1036,6 +1043,10 @@ input[type="radio"].visually-hidden {
 .footer-info a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.footer-info a:hover {
+  color:#e84d37;
 }
 
 .heart {
@@ -1081,4 +1092,8 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright a {
   color: #ffffff;
+}
+
+.footer-copyright a:hover {
+  color:#e84d37;
 }
