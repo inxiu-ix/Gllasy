@@ -653,7 +653,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages {
-  padding: 26px 19px;
+  padding: 25px 19px;
   margin-top: 37px;
 
   border-radius: 15px;
@@ -669,7 +669,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
   padding: 0;
   margin: 0;
-  margin-top: 22px;
+  margin-top: 21px;
   margin-right: 10px;
 }
 
@@ -695,7 +695,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-icon-container {
-  margin-top: 8px;
+  margin-top: 7px;
   margin-right: 8px;
   flex-shrink: 0;
   width: 49px;
@@ -852,6 +852,7 @@ input[type="radio"].visually-hidden {
 .blog h3 {
   font-size: 16px;
   line-height: 22px;
+  margin-top: 4px;
 }
 
 .blog p {
@@ -885,6 +886,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   font-size: 16px;
   line-height: 23px;
+  margin-top: 2px;
 }
 
 .mailing-container {
@@ -930,7 +932,7 @@ input[type="radio"].visually-hidden {
 
 .map {
   position: relative;
-  margin-top: 37px;
+  margin-top: 40px;
   padding: 62px 0;
   min-height: 430px;
 }
@@ -959,7 +961,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   width: 302px;
   min-height: 305px;
-  padding: 32px 23px;
+  padding: 30px 23px;
   border-radius: 15px;
   z-index: 2;
 }
