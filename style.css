@@ -1124,3 +1124,16 @@ input[type="radio"].visually-hidden {
 .footer-copyright a:hover {
   color:#e84d37;
 }
+
+.site-navigation-item .active {
+  background-color: #d07058;
+}
+
+.site-navigation .active:hover {
+  background-color: #d07058;
+  color: #ffffff
+}
+
+.active a {
+  color: #ffffff;
+}
