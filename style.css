@@ -287,6 +287,7 @@ input[type="radio"].visually-hidden {
   background-color: #f9f8f5;
 
   list-style: none;
+  z-index: 1;
 }
 
 .submenu li {
@@ -1163,4 +1164,241 @@ input[type="radio"].visually-hidden {
 .breadcrumbs span {
   padding-left: 5px;
   padding-right: 2px;
+}
+
+.page-title {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+
+.filters-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.filters-form fieldset {
+  margin: 0;
+  margin-bottom: 16px;
+  margin-right: 15px;
+  padding: 0;
+  padding-top: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: lowercase;
+  border: none;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters-form legend {
+  margin-left: 15px;
+  box-sizing: border-box;
+  text-transform: none;
+}
+
+.filters-form select {
+  background-color: #aabab0;
+  background-image: url(img/icon-down-w.png);
+  background-repeat: no-repeat;
+  background-position: 168px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: lowercase;
+  padding: 10px 26px;
+  padding-right: 11px;
+  padding-left: 15px;
+  border: none;
+  transition: all 0.5s;
+  appearance: none;
+}
+
+.filters-form select:hover {
+  background-color: #ffffff;
+  color: #323232;
+  background-image: url(img/icon-down-dir.svg);
+  background-repeat: no-repeat;
+  background-position: 168px 15px;
+}
+
+.filters-form .price-controls {
+  position: relative;
+  background-color: #aabab0;
+  border-radius: 20px;
+  width: 220px;
+  height: 39px;
+}
+
+.price-controls .slider-line {
+  width: 177px;
+  height: 4px;
+  background-color: #d1d9d2;
+  position: absolute;
+  top: 18px;
+  left: 21px;
+}
+
+.price-controls .slider-line .slider-line-2 {
+  background-color: #ffffff;
+  height: 3px;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+
+.price-controls .price-slider-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #97aca1;
+  top: 11px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 3px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.price-controls .slider-button-min {
+  left: 37px;
+}
+
+.price-controls .slider-button-max {
+  left: 135px;
+}
+
+.form-container {
+  background-color: #a9bab0;
+  border-radius: 20px;
+  padding: 11px 0px;
+  padding-right: 2px;
+}
+
+.filters-form input[type="checkbox"],
+.filters-form input[type="radio"] {
+  display: none;
+}
+
+.filters-form label {
+  position: relative;
+  background-color: #aabab0;
+  border-radius: 20px;
+  padding-left: 35px;
+  padding-right: 0px;
+  margin-right: 11px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.filters-form label:first-of-type {
+  margin-left: 47px;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filters-form label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border: 3px solid #eef2f0;
+  border-radius: 3px;
+  transition: background-color 0.5s;
+}
+
+.filters-form .radio::before {
+  border-radius: 50%;
+}
+
+.filters-form label:first-of-type::before {
+  left: -32px;
+}
+
+.filters-form input[type="radio"]:checked + .radio::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eef2f0;
+  cursor: pointer;
+}
+
+.filters-form input[type="radio"]:checked + .radio:first-of-type::after {
+  left: -26px;
+}
+
+.filters-form .checkbox {
+  margin-right: 15px;
+}
+
+.filters-form .checkbox::before {
+  border: 2px solid #eef2f0;
+  width: 20px;
+  height: 20px;
+  left: 1px;
+}
+
+input[type=checkbox]:checked+.checkbox::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  background-image: url(img/checkbox-checked.svg);
+}
+
+input[type=checkbox]:checked+.checkbox:first-of-type:after {
+  left: -32px;
+}
+
+.filters-btn {
+  padding: 9px 27px;
+  display: block;
+  border-radius: 20px;
+  background-color: #a6b7ad;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.filters-btn:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.filters-form label:hover::before {
+  border: 4px solid #eef2f0;
+}
+
+.price-controls .price-slider-button:hover {
+  width: 22px;
+  height: 22px
 }

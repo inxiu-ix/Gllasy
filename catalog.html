@@ -101,6 +101,58 @@
     </div>
     </div>
   </header>
+  <main class="container">
+    <h1 class="page-title">Сливочное мороженое</h1>
+    <form class="filters-form" method="POST">
+      <fieldset class="filters-sort">
+        <legend>Сортировка:</legend>
+        <select>
+          <option>По популярности</option>
+          <option>По возрастанию цены</option>
+          <option>По убыванию цены</option>
+        </select>
+      </fieldset>
+      <fieldset class="filters-price">
+        <legend>Цена: 100 руб. — 500 руб.</legend>
+        <div class="price-controls">
+          <div class="slider-line">
+            <div class="slider-line-2" style="margin-left: 47px; width: 80px;"></div>
+          </div>
+          <div class="price-slider-button slider-button-min"></div>
+          <div class="price-slider-button slider-button-max"></div>
+        </div>
+      </fieldset>
+      <fieldset class="filters-fat">
+        <legend>Жирность:</legend>
+          <div class="form-container">
+            <input type="radio" id="fat-0" name="fat" value="">
+              <label class="radio" for="fat-0">0%</label>
+            <input type="radio" id="fat-10" name="fat" value="" checked="">
+              <label class="radio" for="fat-10">до 10%</label>
+            <input type="radio" id="fat-30" name="fat" value="">
+              <label class="radio" for="fat-30">до 30%</label>
+            <input type="radio" id="fat-100" name="fat" value="">
+              <label class="radio" for="fat-100">выше 30%</label>
+          </div>
+      </fieldset>
+      <fieldset class="filters-filling">
+        <legend>Наполнители:</legend>
+          <div class="form-container">
+            <input type="checkbox" id="filling-1" name="" value="" checked="">
+            <label class="checkbox" for="filling-1">шоколадные</label>
+            <input type="checkbox" id="filling-2" name="" value="" checked="">
+              <label class="checkbox" for="filling-2">сахарные присыпки</label>
+            <input type="checkbox" id="filling-3" name="" value="">
+              <label class="checkbox" for="filling-3">фрукты</label>
+            <input type="checkbox" id="filling-4" name="" value="">
+              <label class="checkbox" for="filling-4">сиропы</label>
+            <input type="checkbox" id="filling-5" name="" value="">
+              <label class="checkbox" for="filling-5">джемы</label>
+          </div>
+      </fieldset>
+      <button class="filters-btn" type="submit" name="apply-filters">Применить</button>
+    </form>
+  </main>
 </body>
 
 </html>
